@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neumorphic ToDo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Container -->
+    <div id="root">
+      <div class="App">
+        <header class="App-header">
+          <div class="Affirmation">
+            <!-- Header -->
+            <div class="quote">
+              <div class="name"></div>
+
+              
+                <label class="neo" for="fname">Neumorphic ToDo</label>
+                <br />
+                <br />
+                <input
+                  maxlength="29"
+                  autocomplete="off"
+                  type="text"
+                  id="inputField"
+                  name="firstname"
+                  placeholder="Enter a todo list item..."
+                />
+                <button id="addToDo">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.6083 11.6083V19.3667C11.6083 19.6606 11.4916 19.9425 11.2837 20.1504C11.0759 20.3582 10.794 20.475 10.5 20.475C10.2061 20.475 9.92415 20.3582 9.7163 20.1504C9.50845 19.9425 9.39167 19.6606 9.39167 19.3667V11.6083H1.63334C1.33939 11.6083 1.05749 11.4916 0.849632 11.2837C0.64178 11.0759 0.525009 10.7939 0.525009 10.5C0.525009 10.2061 0.64178 9.92414 0.849632 9.71629C1.05749 9.50844 1.33939 9.39167 1.63334 9.39167H9.39167V1.63333C9.39167 1.33938 9.50845 1.05748 9.7163 0.849623C9.92415 0.64177 10.2061 0.525 10.5 0.525C10.794 0.525 11.0759 0.64177 11.2837 0.849623C11.4916 1.05748 11.6083 1.33938 11.6083 1.63333V9.39167H19.3667C19.6606 9.39167 19.9425 9.50844 20.1504 9.71629C20.3582 9.92414 20.475 10.2061 20.475 10.5C20.475 10.7939 20.3582 11.0759 20.1504 11.2837C19.9425 11.4916 19.6606 11.6083 19.3667 11.6083H11.6083Z"
+                      fill="#686868"
+                    />
+                  </svg>
+                </button>
+             
+              
+              <ul id="toDoContainer">
+                
+              </ul>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

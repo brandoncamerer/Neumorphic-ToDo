@@ -2,9 +2,7 @@ let addToDoButton = document.getElementById("addToDo");
 let toDoContainer = document.getElementById("toDoContainer");
 let inputField = document.getElementById("inputField");
 
-// Testing Committ
-//Create todo list item
-addToDoButton.addEventListener("click", function () {
+addToDoButton.addEventListener("click", () => {
   var li = document.createElement("Li");
   var divRight = document.createElement("div");
   var divLeft = document.createElement("div");
@@ -13,7 +11,6 @@ addToDoButton.addEventListener("click", function () {
   var input = document.getElementById("inputField").value.trim();
 
   if (!input.length) return false;
-  // cancel click
   else {
     txt.innerText = inputField.value;
     radio.classList.add("radio");
@@ -28,7 +25,7 @@ addToDoButton.addEventListener("click", function () {
     inputField.value = "";
   }
 
-  divLeft.addEventListener("click", function () {
+  divLeft.addEventListener("click", () => {
     var x = radio.classList.contains("completed");
 
     if (x === true) {
@@ -46,7 +43,10 @@ addToDoButton.addEventListener("click", function () {
     }
   });
 
-  divRight.addEventListener("click", function () {
-    toDoContainer.removeChild(li);
+  divRight.addEventListener("click", () => {
+    li.classList.add("fadeOut");
+    setTimeout(() => {
+      toDoContainer.removeChild(li);
+    }, 800);
   });
 });
